@@ -138,15 +138,30 @@ const ServicePage = () => {
                 )}
 
                 {/* Pricing */}
-                {service.pricing && (
+                {(service.pricing || service.priceList) && (
                   <div className="mt-8 bg-accent/5 rounded-xl border border-accent/20 p-8">
-                    <div className="flex items-center gap-3 mb-3">
+                    <div className="flex items-center gap-3 mb-4">
                       <Euro className="h-6 w-6 text-accent" />
                       <h2 className="font-heading text-2xl font-semibold text-foreground">
-                        Kainos
+                        Paslaugų kainos
                       </h2>
                     </div>
-                    <p className="text-foreground text-lg">{service.pricing}</p>
+                    {service.pricing && (
+                      <p className="text-foreground text-lg">{service.pricing}</p>
+                    )}
+                    {service.priceList && (
+                      <div className="space-y-3">
+                        {service.priceList.map((item, i) => (
+                          <div key={i} className="flex items-center justify-between py-2 border-b border-border last:border-0">
+                            <span className="text-foreground">{item.service}</span>
+                            <span className="font-heading font-semibold text-accent whitespace-nowrap ml-4">{item.price}</span>
+                          </div>
+                        ))}
+                        {service.pricingNote && (
+                          <p className="text-muted-foreground text-sm mt-3">{service.pricingNote}</p>
+                        )}
+                      </div>
+                    )}
                   </div>
                 )}
 

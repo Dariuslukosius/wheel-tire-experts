@@ -1,5 +1,10 @@
 import { Disc3, Wrench, CircleDot, Snowflake, LucideIcon } from "lucide-react";
 
+export interface PriceItem {
+  service: string;
+  price: string;
+}
+
 export interface FAQ {
   question: string;
   answer: string;
@@ -16,6 +21,8 @@ export interface ServiceData {
   benefits: string[];
   processSteps?: string[];
   pricing?: string;
+  priceList?: PriceItem[];
+  pricingNote?: string;
   faq?: FAQ[];
   metaTitle: string;
   metaDescription: string;
@@ -68,9 +75,34 @@ export const services: ServiceData[] = [
       "Saugumo patikra po kiekvieno remonto",
       "Garantija atliktiems darbams",
     ],
-    metaTitle: "Padangų remontas Vilniuje | Okra1 servisas",
+    processSteps: [
+      "Padangos hermetizavimas: padanga nuimama nuo ratlankio, pažeidimas užsandarinamas specialiu lopo metodu iš vidinės pusės – patikimiausias pradūrimo taisymo būdas",
+      "Padangos vulkanizavimas: naudojama speciali \"žalia\" guma, kuri vulkanizavimo metu susijungia su padanga, pašalindama pažeidimą – lankstus sprendimas sudėtingesniems defektams",
+      "Ventilio keitimas: jei padanga leidžia orą dėl nesandaraus ventilio, senas ventilis pakeičiamas nauju",
+      "Rato remontas: atliekamas pagal pažeidimo tipą, naudojant specialias technologijas, užtikrinant ratų balansavimą ir saugų automobilio eksploatavimą",
+    ],
+    priceList: [
+      { service: "Padangos montavimas ir rato balansavimas", price: "nuo 15 €/vnt." },
+      { service: "Slėgio daviklio keitimas", price: "10 €/vnt.*" },
+      { service: "Centravimo žiedo gamyba", price: "10 €/vnt." },
+      { service: "Padangos remontas", price: "nuo 15 €/vnt." },
+      { service: "Rato hermetizavimas", price: "15 €/vnt.*" },
+      { service: "Slapto varžto išsukimas", price: "nuo 35 €/vnt." },
+    ],
+    pricingNote: "*Paslaugos kaina nurodyta be padangos permontavimo paslaugos.",
+    faq: [
+      {
+        question: "Kiek kainuoja padangų remontas?",
+        answer: "Padangų remonto kaina priklauso nuo pažeidimo ir naudojamos technologijos. Atvykite į mūsų autoservisą – meistrai apžiūrės padangą ir pasiūlys optimalų remonto sprendimą.",
+      },
+      {
+        question: "Kokia yra padangų remonto trukmė?",
+        answer: "Trukmė priklauso nuo automobilio modelio ir reikalingų darbų apimties. Norėdami sužinoti preliminarią trukmę, susisiekite su mūsų specialistais.",
+      },
+    ],
+    metaTitle: "Padangų remontas Vilniuje | Okra1 – nuo 15€",
     metaDescription:
-      "Profesionalus padangų remontas Vilniuje – pramušimų, įpjovimų taisymas. Greitas aptarnavimas, aukšta kokybė. Okra1 – skambinkite +37067841599.",
+      "Profesionalus padangų remontas Vilniuje – pramušimų, įpjovimų taisymas, hermetizavimas, vulkanizavimas. Nuo 15€. Okra1 – skambinkite +37067841599.",
   },
   {
     slug: "ratlankiu-lyginimas",
