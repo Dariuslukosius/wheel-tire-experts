@@ -14,15 +14,15 @@ const Header = () => {
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
-          <a href="/#apie" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <Link to="/#apie" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             Apie mus
-          </a>
+          </Link>
           <Link to="/paslaugos" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             Paslaugos
           </Link>
-          <a href="/#kontaktai" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <Link to="/#kontaktai" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             Kontaktai
-          </a>
+          </Link>
         </nav>
 
         <div className="flex items-center gap-4">
