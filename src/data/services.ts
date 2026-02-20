@@ -59,19 +59,19 @@ export const services: ServiceData[] = [
     icon: Wrench,
     title: "Padangų remontas",
     shortDescription:
-      "Padangų pramušimų ir įpjovimų remontas profesionaliomis priemonėmis. Taisome tiek lengvųjų, tiek visureigių automobilių padangas.",
+      "Padangų pramušimų ir įpjovimų remontas profesionaliomis priemonėmis. Taisome lengvųjų automobilių padangas.",
     heroTitle: "Padangų remontas",
     heroSubtitle: "Kokybiškas padangų remontas Vilniuje",
     fullDescription: [
       "Padangos pramušimas ar įpjovimas – dažna problema kelyje. Okra1 komanda greitai ir profesionaliai sutaisys jūsų padangą, kad galėtumėte saugiai tęsti kelionę.",
       "Naudojame tik aukščiausios kokybės remonto medžiagas ir profesionalias priemones. Mūsų specialistai turi ilgametę patirtį ir geba sutaisyti net sudėtingiausius pažeidimus.",
-      "Remontuojame tiek lengvųjų automobilių, tiek visureigių ir komercinių transporto priemonių padangas. Kiekviena sutaisyta padanga yra kruopščiai patikrinama, kad užtikrintume jūsų saugumą kelyje.",
+      "Remontuojame lengvųjų automobilių padangas. Kiekviena sutaisyta padanga yra kruopščiai patikrinama, kad užtikrintume jūsų saugumą kelyje.",
     ],
     benefits: [
       "Greitas remontas – dažniausiai per 15–20 min.",
       "Aukštos kokybės remonto medžiagos",
       "Taisome pramušimus, įpjovas ir šonines deformacijas",
-      "Lengvieji, visureigiai ir komerciniai automobiliai",
+      "Lengvieji automobiliai",
       "Saugumo patikra po kiekvieno remonto",
       "Garantija atliktiems darbams",
     ],
