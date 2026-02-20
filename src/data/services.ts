@@ -85,6 +85,14 @@ export const services: ServiceData[] = [
         question: "Kokias paslaugas teikiate?",
         answer: "Teikiame padangų nuėmimą, montavimą, išmontavimą, ratų uždėjimą, ratų balansavimą ir padangų remontą. Dirbame su skardiniais ir lietais ratlankiais (R13–R22). Visiems atliktiems darbams suteikiame garantiją.",
       },
+      {
+        question: "Kada reikia keisti padangas?",
+        answer: "Pagal Lietuvos kelių eismo taisykles, žieminės padangos privalomos nuo lapkričio 10 d. iki kovo 31 d., dygliuotos – nuo lapkričio 1 d. iki balandžio 10 d., vasarinės naudojamos nuo balandžio 1 d. iki lapkričio 9 d. Tačiau svarbu vertinti realias oro sąlygas – kai temperatūra nukrenta žemiau +7 °C, žieminės padangos tampa saugesniu pasirinkimu. Minimalus protektoriaus gylis žieminėms padangoms – 3 mm, vasarinėms – 1,6 mm, tačiau gamintojai rekomenduoja keisti žiemines ties 4–5 mm, vasarines – ties 2–3 mm. Padangas taip pat būtina keisti, jei jos pažeistos, deformuotos ar netolygiai nusidėvėjusios.",
+      },
+      {
+        question: "Kada ir kodėl būtinas ratų balansavimas?",
+        answer: "Tinkamai atliktas ratų balansavimas sumažina kuro sąnaudas, užtikrina tolygų padangų dėvėjimąsi, sumažina pakabos dalių apkrovą ir išlaiko automobilio stabilumą kelyje. Balansavimą rekomenduojama atlikti kiekvieną kartą keičiant padangas – nesvarbu, ar naujos, ar naudotos. Taip pat reikalingas, jei jaučiama vibracija didesniu greičiu, automobilis traukia į vieną pusę, padangos dėvisi netolygiai arba įvažiavote į duobę ar kliudėte bordiūrą.",
+      },
     ],
     metaTitle: "Ratų montavimas Vilniuje | Okra1 – nuo 2€",
     metaDescription:
