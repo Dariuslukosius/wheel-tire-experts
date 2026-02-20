@@ -26,25 +26,32 @@ const Services = () => {
               <Link
                 key={service.slug}
                 to={`/paslaugos/${service.slug}`}
-                className="group bg-card rounded-xl p-8 border border-border hover:border-accent/40 hover:shadow-lg transition-all duration-300"
+                className="group bg-card rounded-xl overflow-hidden border border-border hover:border-accent/40 hover:shadow-lg transition-all duration-300"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="flex items-start gap-5">
-                  <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
-                    <Icon className="h-7 w-7 text-accent" />
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src={service.heroImage}
+                    alt={service.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
+                  <div className="absolute top-4 left-4 w-12 h-12 rounded-xl bg-accent/90 flex items-center justify-center">
+                    <Icon className="h-6 w-6 text-accent-foreground" />
                   </div>
-                  <div>
-                    <h3 className="font-heading text-xl font-semibold text-foreground mb-3">
-                      {service.title}
-                    </h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {service.shortDescription}
-                    </p>
-                    <span className="inline-flex items-center gap-1 text-accent font-medium text-sm mt-4 group-hover:gap-2 transition-all">
-                      Skaityti daugiau
-                      <ArrowRight className="h-4 w-4" />
-                    </span>
-                  </div>
+                </div>
+                <div className="p-6">
+                  <h3 className="font-heading text-xl font-semibold text-foreground mb-2">
+                    {service.title}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed text-sm">
+                    {service.shortDescription}
+                  </p>
+                  <span className="inline-flex items-center gap-1 text-accent font-medium text-sm mt-4 group-hover:gap-2 transition-all">
+                    Skaityti daugiau
+                    <ArrowRight className="h-4 w-4" />
+                  </span>
                 </div>
               </Link>
             );
