@@ -43,7 +43,7 @@ const SiteInfoPage = () => {
               </p>
               <p className="text-muted-foreground leading-relaxed text-lg">
                 SEO strategiją ir techninį optimizavimą įgyvendino{" "}
-                <strong className="text-foreground">LamaLocal</strong> – SEO agentūra Lietuvoje, teikianti vietinio ir nacionalinio verslo matomumo didinimo sprendimus.
+                <a href="https://lamalocal.lt/" target="_blank" rel="noopener noreferrer" className="text-accent font-semibold hover:underline">LamaLocal</a> – SEO agentūra Lietuvoje, teikianti vietinio ir nacionalinio verslo matomumo didinimo sprendimus.
               </p>
             </div>
           </div>
