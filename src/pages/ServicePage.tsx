@@ -67,8 +67,16 @@ const ServicePage = () => {
 
       <main className="pt-20">
         {/* Hero */}
-        <section className="bg-primary py-16 sm:py-24">
-          <div className="container mx-auto px-4">
+        <section className="relative py-16 sm:py-24 overflow-hidden">
+          <div className="absolute inset-0">
+            <img
+              src={service.heroImage}
+              alt={service.heroTitle}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-primary/80" />
+          </div>
+          <div className="relative z-10 container mx-auto px-4">
             <Link
               to="/"
               className="inline-flex items-center gap-2 text-primary-foreground/60 hover:text-primary-foreground transition-colors mb-8 text-sm"
