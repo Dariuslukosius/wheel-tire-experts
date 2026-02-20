@@ -9,10 +9,10 @@ const ServicesPage = () => {
   return (
     <>
       <Helmet>
-        <title>Paslaugos | Okra1 – Ratų servisas Vilniuje</title>
+        <title>Paslaugos | Jūsų Servisas – Ratų servisas Vilniuje</title>
         <meta
           name="description"
-          content="Okra1 paslaugos Vilniuje: padangų montavimas, padangų remontas, ratlankių lyginimas, kondicionierių pildymas. Kasdien 9–20h."
+          content="Jūsų Servisas paslaugos Vilniuje: padangų montavimas, padangų remontas, ratlankių lyginimas, kondicionierių pildymas. Kasdien 9–20h."
         />
         <link rel="canonical" href="https://okra1.lt/paslaugos" />
         <html lang="lt" />

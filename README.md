@@ -1,4 +1,4 @@
-# Okra1 – Ratų servisas
+# Jūsų Servisas – Ratų servisas
 
 Profesionalus ratų serviso svetainė, sukurta Vilniaus verslui.
 

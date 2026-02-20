@@ -8,8 +8,8 @@ const SiteInfoPage = () => {
   return (
     <>
       <Helmet>
-        <title>Svetainės informacija | Okra1</title>
-        <meta name="description" content="Informacija apie Okra1 svetainės kūrimą, SEO optimizavimą ir techninę struktūrą." />
+        <title>Svetainės informacija | Jūsų Servisas</title>
+        <meta name="description" content="Informacija apie Jūsų Servisas svetainės kūrimą, SEO optimizavimą ir techninę struktūrą." />
         <meta name="robots" content="noindex, nofollow" />
         <html lang="lt" />
       </Helmet>
@@ -36,7 +36,7 @@ const SiteInfoPage = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto space-y-6">
               <p className="text-muted-foreground leading-relaxed text-lg">
-                Ši interneto svetainė sukurta autoservisui Okra1, siekiant užtikrinti aiškų paslaugų pristatymą ir gerą matomumą „Google" paieškos sistemoje pagal autoserviso paslaugas Vilniuje. Kuriant svetainę buvo įgyvendinti techninio SEO, turinio struktūrizavimo ir greičio optimizavimo sprendimai.
+                Ši interneto svetainė sukurta autoservisui Jūsų Servisas, siekiant užtikrinti aiškų paslaugų pristatymą ir gerą matomumą „Google" paieškos sistemoje pagal autoserviso paslaugas Vilniuje. Kuriant svetainę buvo įgyvendinti techninio SEO, turinio struktūrizavimo ir greičio optimizavimo sprendimai.
               </p>
               <p className="text-muted-foreground leading-relaxed text-lg">
                 Svetainė pritaikyta visiems įrenginiams, optimizuota greitam įkėlimui bei tinkamai indeksacijai paieškos sistemose. Didelis dėmesys skirtas vietiniam SEO, raktinių žodžių strategijai ir konversijų optimizavimui.

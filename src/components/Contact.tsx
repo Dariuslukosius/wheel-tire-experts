@@ -18,10 +18,10 @@ const Contact = () => {
           <div className="space-y-8">
             <div id="apie" className="bg-muted rounded-xl p-8">
               <h3 className="font-heading text-xl font-semibold text-foreground mb-4">
-                Apie Okra1
+                Apie Jūsų Servisas
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Okra1 – tai profesionalus ratų servisas Vilniuje, teikiantis aukštos kokybės 
+                Jūsų Servisas – tai profesionalus ratų servisas Vilniuje, teikiantis aukštos kokybės 
                 automobilių ratų ir klimato sistemos paslaugas. Mūsų patyrusi komanda naudoja 
                 modernią įrangą, kad kiekvienas klientas gautų geriausią rezultatą. Dirbame 
                 greitai ir efektyviai, nes vertiname jūsų laiką.
@@ -81,7 +81,7 @@ const Contact = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Okra1 vieta žemėlapyje"
+              title="Jūsų Servisas vieta žemėlapyje"
             />
           </div>
         </div>

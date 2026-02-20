@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet-async";
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "AutoRepair",
-  name: "Okra1",
+  name: "Jūsų Servisas",
   description:
     "Profesionalus ratų servisas Vilniuje – ratų montavimas, padangų remontas, ratlankių lyginimas, kondicionierių pildymas.",
   telephone: "+37067841599",
@@ -40,17 +40,17 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Okra1 – Ratų servisas Vilniuje | Montavimas, Remontas, Lyginimas</title>
+        <title>Jūsų Servisas – Ratų servisas Vilniuje | Montavimas, Remontas, Lyginimas</title>
         <meta
           name="description"
-          content="Okra1 – profesionalus ratų servisas Vilniuje. Ratų montavimas, padangų remontas, ratlankių lyginimas ir kondicionierių pildymas. Kasdien 9-20h. Skambinkite +37067841599."
+          content="Jūsų Servisas – profesionalus ratų servisas Vilniuje. Ratų montavimas, padangų remontas, ratlankių lyginimas ir kondicionierių pildymas. Kasdien 9-20h. Skambinkite +37067841599."
         />
         <meta
           name="keywords"
-          content="ratų servisas, ratų montavimas Vilnius, padangų remontas, ratlankių lyginimas, kondicionierius, Okra1, padangų servisas Vilniuje"
+          content="ratų servisas, ratų montavimas Vilnius, padangų remontas, ratlankių lyginimas, kondicionierius, Jūsų Servisas, padangų servisas Vilniuje"
         />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Okra1 – Ratų servisas Vilniuje" />
+        <meta property="og:title" content="Jūsų Servisas – Ratų servisas Vilniuje" />
         <meta
           property="og:description"
           content="Profesionalus ratų montavimas, padangų remontas, ratlankių lyginimas ir kondicionierių pildymas Vilniuje."

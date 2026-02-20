@@ -100,9 +100,9 @@ export const services: ServiceData[] = [
         answer: "Tinkamai atliktas ratų balansavimas sumažina kuro sąnaudas, užtikrina tolygų padangų dėvėjimąsi, sumažina pakabos dalių apkrovą ir išlaiko automobilio stabilumą kelyje. Balansavimą rekomenduojama atlikti kiekvieną kartą keičiant padangas – nesvarbu, ar naujos, ar naudotos. Taip pat reikalingas, jei jaučiama vibracija didesniu greičiu, automobilis traukia į vieną pusę, padangos dėvisi netolygiai arba įvažiavote į duobę ar kliudėte bordiūrą.",
       },
     ],
-    metaTitle: "Padangų montavimas Vilniuje | Okra1 – nuo 2€",
+    metaTitle: "Padangų montavimas Vilniuje | Jūsų Servisas – nuo 2€",
     metaDescription:
-      "Greitas padangų montavimas ir ratų balansavimas Vilniuje. 8 metų patirtis, moderni įranga, nuo 2€. Okra1 – skambinkite +37067841599.",
+      "Greitas padangų montavimas ir ratų balansavimas Vilniuje. 8 metų patirtis, moderni įranga, nuo 2€. Jūsų Servisas – skambinkite +37067841599.",
   },
   {
     slug: "padangu-remontas",
@@ -114,7 +114,7 @@ export const services: ServiceData[] = [
     heroTitle: "Padangų remontas",
     heroSubtitle: "Kokybiškas padangų remontas Vilniuje",
     fullDescription: [
-      "Padangos pramušimas ar įpjovimas – dažna problema kelyje. Okra1 komanda greitai ir profesionaliai sutaisys jūsų padangą, kad galėtumėte saugiai tęsti kelionę.",
+      "Padangos pramušimas ar įpjovimas – dažna problema kelyje. Jūsų Servisas komanda greitai ir profesionaliai sutaisys jūsų padangą, kad galėtumėte saugiai tęsti kelionę.",
       "Naudojame tik aukščiausios kokybės remonto medžiagas ir profesionalias priemones. Mūsų specialistai turi ilgametę patirtį ir geba sutaisyti net sudėtingiausius pažeidimus.",
       "Remontuojame lengvųjų automobilių padangas. Kiekviena sutaisyta padanga yra kruopščiai patikrinama, kad užtikrintume jūsų saugumą kelyje.",
     ],
@@ -151,9 +151,9 @@ export const services: ServiceData[] = [
         answer: "Trukmė priklauso nuo automobilio modelio ir reikalingų darbų apimties. Norėdami sužinoti preliminarią trukmę, susisiekite su mūsų specialistais.",
       },
     ],
-    metaTitle: "Padangų remontas Vilniuje | Okra1 – nuo 15€",
+    metaTitle: "Padangų remontas Vilniuje | Jūsų Servisas – nuo 15€",
     metaDescription:
-      "Profesionalus padangų remontas Vilniuje – pramušimų, įpjovimų taisymas, hermetizavimas, vulkanizavimas. Nuo 15€. Okra1 – skambinkite +37067841599.",
+      "Profesionalus padangų remontas Vilniuje – pramušimų, įpjovimų taisymas, hermetizavimas, vulkanizavimas. Nuo 15€. Jūsų Servisas – skambinkite +37067841599.",
   },
   {
     slug: "ratlankiu-lyginimas",
@@ -166,7 +166,7 @@ export const services: ServiceData[] = [
     heroSubtitle: "Ar ratlankis sulinko? Mes galime padėti!",
     fullDescription: [
       "Kartais netikėtas susidūrimas su duobe ar kliūtimi kelyje gali sugadinti Jūsų automobilio ratlankį. Nesutvarkytas ratlankis ne tik sumažina komfortą, bet ir kelia pavojų Jūsų saugumui bei gali pakenkti pakabai.",
-      "Okra1 siūlo profesionalų ratlankių lyginimą, atstatant originalią ratlankio formą ir užtikrinant optimalų ratų balansą.",
+      "Jūsų Servisas siūlo profesionalų ratlankių lyginimą, atstatant originalią ratlankio formą ir užtikrinant optimalų ratų balansą.",
       "Lietų ratlankių keitimas naujais dažnai būna brangesnis, todėl lyginimas – kur kas ekonomiškesnis pasirinkimas.",
     ],
     benefits: [
@@ -190,16 +190,16 @@ export const services: ServiceData[] = [
     faq: [
       {
         question: "Kokia yra ratlankių lyginimo kaina?",
-        answer: "Kaina priklauso nuo pažeidimo. Ne visi ratlankiai gali būti suremontuoti, todėl kviečiame kreiptis telefonu arba atvykti į Okra1 servisą.",
+        answer: "Kaina priklauso nuo pažeidimo. Ne visi ratlankiai gali būti suremontuoti, todėl kviečiame kreiptis telefonu arba atvykti į Jūsų Servisas servisą.",
       },
       {
         question: "Kokia yra ratlankių lyginimo trukmė?",
         answer: "Trukmė priklauso nuo automobilio modelio ir darbų apimties. Norėdami sužinoti preliminarią trukmę, susisiekite su mūsų specialistais.",
       },
     ],
-    metaTitle: "Ratlankių lyginimas Vilniuje | Okra1 – nuo 20€",
+    metaTitle: "Ratlankių lyginimas Vilniuje | Jūsų Servisas – nuo 20€",
     metaDescription:
-      "Profesionalus ratlankių lyginimas Vilniuje – originalios formos atstatymas, moderni įranga, nuo 20€/vnt. Okra1 – skambinkite +37067841599.",
+      "Profesionalus ratlankių lyginimas Vilniuje – originalios formos atstatymas, moderni įranga, nuo 20€/vnt. Jūsų Servisas – skambinkite +37067841599.",
   },
   {
     slug: "kondicionieriaus-pildymas",
@@ -211,7 +211,7 @@ export const services: ServiceData[] = [
     heroTitle: "Kondicionierių pildymas",
     heroSubtitle: "Auto kondicionieriaus diagnostika ir pildymas",
     fullDescription: [
-      "Automobilio kondicionierius – svarbi komforto dalis bet kuriuo metų laiku. Okra1 atlieka pilną kondicionavimo sistemos diagnostiką ir priežiūrą.",
+      "Automobilio kondicionierius – svarbi komforto dalis bet kuriuo metų laiku. Jūsų Servisas atlieka pilną kondicionavimo sistemos diagnostiką ir priežiūrą.",
       "Mūsų paslaugos apima šaldymo agento lygio patikrinimą, sistemos nuotėkių diagnostiką, senosios medžiagos išsiurbimą ir naujo freono užpildymą tiksliai pagal gamintojo specifikacijas.",
       "Rekomenduojame pildyti kondicionierių kas 2 metus, net jei sistema atrodo veikianti normaliai. Reguliari priežiūra prailgina kompresoriaus tarnavimo laiką ir užtikrina efektyvų aušinimą.",
     ],
@@ -223,9 +223,9 @@ export const services: ServiceData[] = [
       "Tinka R134a ir R1234yf šaldymo agentams",
       "Rekomenduojama kas 2 metus",
     ],
-    metaTitle: "Kondicionierių pildymas Vilniuje | Okra1 servisas",
+    metaTitle: "Kondicionierių pildymas Vilniuje | Jūsų Servisas servisas",
     metaDescription:
-      "Auto kondicionieriaus pildymas ir diagnostika Vilniuje – freono pildymas, nuotėkių paieška, antibakterinis valymas. Okra1 – skambinkite +37067841599.",
+      "Auto kondicionieriaus pildymas ir diagnostika Vilniuje – freono pildymas, nuotėkių paieška, antibakterinis valymas. Jūsų Servisas – skambinkite +37067841599.",
   },
 ];
 

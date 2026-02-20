@@ -23,7 +23,7 @@ const ServicePage = () => {
     description: service.metaDescription,
     provider: {
       "@type": "AutoRepair",
-      name: "Okra1",
+      name: "Jūsų Servisas",
       telephone: "+37067841599",
       address: {
         "@type": "PostalAddress",

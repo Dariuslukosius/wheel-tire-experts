@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           src={heroBg}
-          alt="Okra1 ratų servisas - profesionali dirbtuvė"
+          alt="Jūsų Servisas ratų servisas - profesionali dirbtuvė"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 hero-overlay" />

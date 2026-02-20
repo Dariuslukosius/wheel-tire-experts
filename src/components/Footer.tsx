@@ -11,9 +11,9 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <Link to="/" className="flex items-center gap-3 mb-4">
-              <img src={logo} alt="Okra1" className="h-9 w-9 rounded-md" />
+              <img src={logo} alt="Jūsų Servisas" className="h-9 w-9 rounded-md" />
               <span className="font-heading text-xl font-bold text-primary-foreground">
-                Okra<span className="text-accent">1</span>
+                Jūsų Servisas
               </span>
             </Link>
             <p className="text-primary-foreground/60 text-sm leading-relaxed">
@@ -107,7 +107,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/10 pt-6">
           <p className="text-primary-foreground/40 text-sm text-center">
-            © {new Date().getFullYear()} Okra1. Visos teisės saugomos.
+            © {new Date().getFullYear()} Jūsų Servisas. Visos teisės saugomos.
           </p>
         </div>
       </div>
