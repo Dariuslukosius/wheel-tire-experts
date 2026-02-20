@@ -30,9 +30,9 @@ export interface ServiceData {
 
 export const services: ServiceData[] = [
   {
-    slug: "ratu-montavimas",
+    slug: "padangu-montavimas",
     icon: Disc3,
-    title: "Ratų montavimas",
+    title: "Padangų montavimas",
     shortDescription:
       "Greitas padangų montavimas, keitimas ir ratų balansavimas Vilniuje. 8 metų patirtis – kokybė, kuria galite pasitikėti.",
     heroTitle: "Padangų montavimas",
@@ -94,7 +94,7 @@ export const services: ServiceData[] = [
         answer: "Tinkamai atliktas ratų balansavimas sumažina kuro sąnaudas, užtikrina tolygų padangų dėvėjimąsi, sumažina pakabos dalių apkrovą ir išlaiko automobilio stabilumą kelyje. Balansavimą rekomenduojama atlikti kiekvieną kartą keičiant padangas – nesvarbu, ar naujos, ar naudotos. Taip pat reikalingas, jei jaučiama vibracija didesniu greičiu, automobilis traukia į vieną pusę, padangos dėvisi netolygiai arba įvažiavote į duobę ar kliudėte bordiūrą.",
       },
     ],
-    metaTitle: "Ratų montavimas Vilniuje | Okra1 – nuo 2€",
+    metaTitle: "Padangų montavimas Vilniuje | Okra1 – nuo 2€",
     metaDescription:
       "Greitas padangų montavimas ir ratų balansavimas Vilniuje. 8 metų patirtis, moderni įranga, nuo 2€. Okra1 – skambinkite +37067841599.",
   },
