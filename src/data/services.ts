@@ -1,5 +1,10 @@
 import { Disc3, Wrench, CircleDot, Snowflake, LucideIcon } from "lucide-react";
 
+export interface FAQ {
+  question: string;
+  answer: string;
+}
+
 export interface ServiceData {
   slug: string;
   icon: LucideIcon;
@@ -9,6 +14,9 @@ export interface ServiceData {
   heroSubtitle: string;
   fullDescription: string[];
   benefits: string[];
+  processSteps?: string[];
+  pricing?: string;
+  faq?: FAQ[];
   metaTitle: string;
   metaDescription: string;
 }
@@ -69,25 +77,45 @@ export const services: ServiceData[] = [
     icon: CircleDot,
     title: "Ratlankių lyginimas",
     shortDescription:
-      "Deformuotų ir pažeistų ratlankių lyginimas bei restauravimas. Atkuriame pradinę ratlankio formą naudodami precizinę lyginimo įrangą.",
-    heroTitle: "Ratlankių lyginimas",
-    heroSubtitle: "Precizinis ratlankių lyginimas ir restauravimas",
+      "Ar ratlankis sulinko? Profesionalus ratlankių lyginimas, atstatant originalią formą ir užtikrinant optimalų ratų balansą. Nuo 20 €/vnt.",
+    heroTitle: "Ratlankių lyginimas Vilniuje",
+    heroSubtitle: "Ar ratlankis sulinko? Mes galime padėti!",
     fullDescription: [
-      "Duobėtos Lietuvos keliai dažnai pažeidžia ratlankius. Okra1 turi profesionalią ratlankių lyginimo įrangą, kuri leidžia atkurti pradinę ratlankio formą be jokių pėdsakų.",
-      "Mūsų precizinė lyginimo technologija tinka tiek plieniniams, tiek lengvo lydinio ratlankiams. Procesas yra kruopštus ir kontroliuojamas – kiekvienas ratlankis yra tikrinamas prieš ir po lyginimo.",
-      "Ratlankio lyginimas yra ekonomiškas sprendimas, palyginus su nauju ratlankiu. Be to, tai padeda išvengti padangos slėgio praradimo ir vibracijos važiuojant.",
+      "Kartais netikėtas susidūrimas su duobe ar kliūtimi kelyje gali sugadinti Jūsų automobilio ratlankį. Nesutvarkytas ratlankis ne tik sumažina komfortą, bet ir kelia pavojų Jūsų saugumui bei gali pakenkti pakabai.",
+      "Okra1 siūlo profesionalų ratlankių lyginimą, atstatant originalią ratlankio formą ir užtikrinant optimalų ratų balansą.",
+      "Lietų ratlankių keitimas naujais dažnai būna brangesnis, todėl lyginimas – kur kas ekonomiškesnis pasirinkimas.",
     ],
     benefits: [
-      "Plieninių ir lengvo lydinio ratlankių lyginimas",
-      "Precizinė, kompiuteriu valdoma įranga",
-      "Atkuriama pradinė ratlankio forma",
-      "Ekonomiška alternatyva naujam ratlankiui",
-      "Pašalinamos vibracijos ir oro nuotėkiai",
-      "Vizualinė ir techninė kokybės kontrolė",
+      "Tikslus ratlankio formos atstatymas",
+      "Moderni įranga ir saugūs, patikimi procesai",
+      "Profesionalūs ir patyrę meistrai",
+      "Užtikrinamas teisingas ratų balansas",
+      "Ilgesnis padangų tarnavimo laikas",
+      "Mažesnė pakabos remonto rizika",
+      "Pašalinama vibracija dėl deformuotų ratlankių",
+      "Komfortiškesnis ir saugesnis vairavimas",
     ],
-    metaTitle: "Ratlankių lyginimas Vilniuje | Okra1 servisas",
+    processSteps: [
+      "Meistras nuima padangą nuo ratlankio",
+      "Ratlankis pašildomas, kad metalas taptų lankstesnis",
+      "Naudojant hidraulines ir mechanines tiesinimo stakles, ratlankis atstatomas į pradinę formą",
+      "Matavimo prietaisais patikrinamas gamyklinis ratlankio tikslumas",
+      "Po procedūros ratlankis vėl paruošiamas padangos montavimui – jokių oro nuostolių ir vibracijų",
+    ],
+    pricing: "Ratlankio lyginimas – nuo 20 €/vnt. Tiksli kaina priklauso nuo ratlankio pažeidimo tipo ir dydžio.",
+    faq: [
+      {
+        question: "Kokia yra ratlankių lyginimo kaina?",
+        answer: "Kaina priklauso nuo pažeidimo. Ne visi ratlankiai gali būti suremontuoti, todėl kviečiame kreiptis telefonu arba atvykti į Okra1 servisą.",
+      },
+      {
+        question: "Kokia yra ratlankių lyginimo trukmė?",
+        answer: "Trukmė priklauso nuo automobilio modelio ir darbų apimties. Norėdami sužinoti preliminarią trukmę, susisiekite su mūsų specialistais.",
+      },
+    ],
+    metaTitle: "Ratlankių lyginimas Vilniuje | Okra1 – nuo 20€",
     metaDescription:
-      "Ratlankių lyginimas ir restauravimas Vilniuje – precizinė įranga, plieniniai ir lengvo lydinio ratlankiai. Okra1 – skambinkite +37067841599.",
+      "Profesionalus ratlankių lyginimas Vilniuje – originalios formos atstatymas, moderni įranga, nuo 20€/vnt. Okra1 – skambinkite +37067841599.",
   },
   {
     slug: "kondicionieriaus-pildymas",

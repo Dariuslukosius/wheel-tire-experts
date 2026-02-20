@@ -1,6 +1,6 @@
 import { useParams, Navigate, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { Phone, ArrowLeft, CheckCircle2 } from "lucide-react";
+import { Phone, ArrowLeft, CheckCircle2, Euro, HelpCircle } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { getServiceBySlug, services } from "@/data/services";
@@ -34,6 +34,19 @@ const ServicePage = () => {
     areaServed: "Vilnius",
   };
 
+  const faqJsonLd = service.faq && service.faq.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: service.faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  } : null;
+
   return (
     <>
       <Helmet>
@@ -45,6 +58,9 @@ const ServicePage = () => {
         <meta property="og:locale" content="lt_LT" />
         <link rel="canonical" href={`https://okra1.lt/paslaugos/${service.slug}`} />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+        {faqJsonLd && (
+          <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
+        )}
       </Helmet>
 
       <Header />
@@ -101,6 +117,62 @@ const ServicePage = () => {
                     ))}
                   </ul>
                 </div>
+
+                {/* Process Steps */}
+                {service.processSteps && service.processSteps.length > 0 && (
+                  <div className="mt-8 bg-card rounded-xl border border-border p-8">
+                    <h2 className="font-heading text-2xl font-semibold text-foreground mb-6">
+                      Kaip atliekama paslauga
+                    </h2>
+                    <ol className="space-y-4">
+                      {service.processSteps.map((step, i) => (
+                        <li key={i} className="flex items-start gap-4">
+                          <span className="flex-shrink-0 w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center font-heading font-bold text-accent text-sm">
+                            {i + 1}
+                          </span>
+                          <span className="text-foreground pt-1">{step}</span>
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+                )}
+
+                {/* Pricing */}
+                {service.pricing && (
+                  <div className="mt-8 bg-accent/5 rounded-xl border border-accent/20 p-8">
+                    <div className="flex items-center gap-3 mb-3">
+                      <Euro className="h-6 w-6 text-accent" />
+                      <h2 className="font-heading text-2xl font-semibold text-foreground">
+                        Kainos
+                      </h2>
+                    </div>
+                    <p className="text-foreground text-lg">{service.pricing}</p>
+                  </div>
+                )}
+
+                {/* FAQ */}
+                {service.faq && service.faq.length > 0 && (
+                  <div className="mt-8">
+                    <div className="flex items-center gap-3 mb-6">
+                      <HelpCircle className="h-6 w-6 text-accent" />
+                      <h2 className="font-heading text-2xl font-semibold text-foreground">
+                        Dažnai užduodami klausimai
+                      </h2>
+                    </div>
+                    <div className="space-y-4">
+                      {service.faq.map((item, i) => (
+                        <div key={i} className="bg-card rounded-xl border border-border p-6">
+                          <h3 className="font-heading font-semibold text-foreground mb-2">
+                            {item.question}
+                          </h3>
+                          <p className="text-muted-foreground leading-relaxed">
+                            {item.answer}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
                 {/* CTA */}
                 <div className="bg-accent/10 rounded-xl p-8 mt-8">
