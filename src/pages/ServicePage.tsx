@@ -261,6 +261,48 @@ const ServicePage = () => {
             </div>
           </div>
         </section>
+
+        {/* Recommended services */}
+        <section className="py-14 sm:py-16 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <h2 className="font-heading text-2xl sm:text-3xl font-semibold text-foreground text-center mb-10">
+              Kitos mūsų paslaugos
+            </h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              {otherServices.map((s) => {
+                const OtherIcon = s.icon;
+                return (
+                  <Link
+                    key={s.slug}
+                    to={`/paslaugos/${s.slug}`}
+                    className="group bg-card rounded-xl overflow-hidden border border-border hover:border-accent/40 hover:shadow-lg transition-all duration-300"
+                  >
+                    <div className="relative h-36 overflow-hidden">
+                      <img
+                        src={s.heroImage}
+                        alt={s.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
+                      <div className="absolute top-3 left-3 w-10 h-10 rounded-lg bg-accent/90 flex items-center justify-center">
+                        <OtherIcon className="h-5 w-5 text-accent-foreground" />
+                      </div>
+                    </div>
+                    <div className="p-4">
+                      <h3 className="font-heading text-base font-semibold text-foreground mb-1 group-hover:text-accent transition-colors">
+                        {s.title}
+                      </h3>
+                      <p className="text-muted-foreground text-xs leading-relaxed line-clamp-2">
+                        {s.shortDescription}
+                      </p>
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </section>
       </main>
 
       <Footer />
