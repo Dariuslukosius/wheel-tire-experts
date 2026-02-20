@@ -77,7 +77,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-primary-foreground/60 hover:text-accent transition-colors text-sm"
                 >
-                  Facebook puslapis
+                  Svetainės informacija
                 </a>
               </li>
             </ul>
