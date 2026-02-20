@@ -14,7 +14,7 @@ const Header = () => {
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
-          <Link to="/#apie" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <Link to="/" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             Apie mus
           </Link>
           <Link to="/paslaugos" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
