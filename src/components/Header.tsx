@@ -1,16 +1,17 @@
 import { Phone, Clock, MapPin } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-3">
+        <Link to="/" className="flex items-center gap-3">
           <img src={logo} alt="Okra1 logotipas" className="h-10 w-10 rounded-lg" />
           <span className="font-heading text-2xl font-bold text-primary">
             Okra<span className="text-accent">1</span>
           </span>
-        </a>
+        </Link>
 
         <nav className="hidden md:flex items-center gap-8">
           <a href="#paslaugos" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">

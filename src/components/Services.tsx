@@ -1,31 +1,6 @@
-import { Disc3, Wrench, CircleDot, Snowflake } from "lucide-react";
-
-const services = [
-  {
-    icon: Disc3,
-    title: "Ratų montavimas",
-    description:
-      "Profesionalus ratų montavimas ir demontavimas naudojant pažangią įrangą. Atliekame sezoninį padangų keitimą, balansavimą ir ratų geometrijos reguliavimą. Greitai ir kokybiškai – jūsų automobilis bus paruoštas bet kokioms kelio sąlygoms.",
-  },
-  {
-    icon: Wrench,
-    title: "Padangų remontas",
-    description:
-      "Padangų pramušimų ir įpjovimų remontas profesionaliomis priemonėmis. Taisome tiek lengvųjų, tiek visureigių automobilių padangas. Naudojame tik aukštos kokybės medžiagas, kad padanga tarnautų ilgai ir saugiai.",
-  },
-  {
-    icon: CircleDot,
-    title: "Ratlankių lyginimas",
-    description:
-      "Deformuotų ir pažeistų ratlankių lyginimas bei restauravimas. Atkuriame pradinę ratlankio formą naudodami precizinę lyginimo įrangą. Šis procesas prailgina ratlankio tarnavimo laiką ir užtikrina sklandų važiavimą.",
-  },
-  {
-    icon: Snowflake,
-    title: "Kondicionierių pildymas",
-    description:
-      "Automobilio kondicionavimo sistemos diagnostika ir šaldymo agento pildymas. Patikriname sistemą dėl nuotėkių, išvalome ir užpildome tinkamu freono kiekiu. Mėgaukitės vėsiu oru salone bet kuriuo metų laiku.",
-  },
-];
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
+import { services } from "@/data/services";
 
 const Services = () => {
   return (
@@ -45,27 +20,35 @@ const Services = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-          {services.map((service, index) => (
-            <article
-              key={service.title}
-              className="group bg-card rounded-xl p-8 border border-border hover:border-accent/40 hover:shadow-lg transition-all duration-300"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <div className="flex items-start gap-5">
-                <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
-                  <service.icon className="h-7 w-7 text-accent" />
+          {services.map((service, index) => {
+            const Icon = service.icon;
+            return (
+              <Link
+                key={service.slug}
+                to={`/paslaugos/${service.slug}`}
+                className="group bg-card rounded-xl p-8 border border-border hover:border-accent/40 hover:shadow-lg transition-all duration-300"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <div className="flex items-start gap-5">
+                  <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                    <Icon className="h-7 w-7 text-accent" />
+                  </div>
+                  <div>
+                    <h3 className="font-heading text-xl font-semibold text-foreground mb-3">
+                      {service.title}
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {service.shortDescription}
+                    </p>
+                    <span className="inline-flex items-center gap-1 text-accent font-medium text-sm mt-4 group-hover:gap-2 transition-all">
+                      Skaityti daugiau
+                      <ArrowRight className="h-4 w-4" />
+                    </span>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="font-heading text-xl font-semibold text-foreground mb-3">
-                    {service.title}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {service.description}
-                  </p>
-                </div>
-              </div>
-            </article>
-          ))}
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>
