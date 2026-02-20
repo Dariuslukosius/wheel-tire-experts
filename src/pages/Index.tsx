@@ -16,6 +16,8 @@ const jsonLd = {
   address: {
     "@type": "PostalAddress",
     addressLocality: "Vilnius",
+    streetAddress: "Žirmūnų g. 54A",
+    postalCode: "09100",
     addressCountry: "LT",
   },
   geo: {

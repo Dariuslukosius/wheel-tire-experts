@@ -63,8 +63,9 @@ const Contact = () => {
                 <div>
                   <p className="text-sm text-muted-foreground">Adresas</p>
                   <p className="font-heading font-semibold text-foreground text-lg">
-                    Vilnius, Lietuva
+                    Žirmūnų g. 54A, Vilnius
                   </p>
+                  <p className="text-muted-foreground text-sm">09100 Vilniaus m. sav.</p>
                 </div>
               </div>
             </div>
