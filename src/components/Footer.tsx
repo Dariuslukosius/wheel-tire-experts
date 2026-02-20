@@ -71,14 +71,12 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="https://www.facebook.com/okra1servisas/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  to="/svetaines-informacija"
                   className="text-primary-foreground/60 hover:text-accent transition-colors text-sm"
                 >
                   Svetainės informacija
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
