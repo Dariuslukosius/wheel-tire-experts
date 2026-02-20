@@ -1,4 +1,8 @@
 import { Disc3, Wrench, CircleDot, Snowflake, LucideIcon } from "lucide-react";
+import heroPadanguMontavimas from "@/assets/hero-padangu-montavimas.jpg";
+import heroPadanguRemontas from "@/assets/hero-padangu-remontas.jpg";
+import heroRatlankiuLyginimas from "@/assets/hero-ratlankiu-lyginimas.jpg";
+import heroKondicionieriau from "@/assets/hero-kondicionieriaus-pildymas.jpg";
 
 export interface PriceItem {
   service: string;
@@ -17,6 +21,7 @@ export interface ServiceData {
   shortDescription: string;
   heroTitle: string;
   heroSubtitle: string;
+  heroImage: string;
   fullDescription: string[];
   benefits: string[];
   processSteps?: string[];
@@ -32,6 +37,7 @@ export const services: ServiceData[] = [
   {
     slug: "padangu-montavimas",
     icon: Disc3,
+    heroImage: heroPadanguMontavimas,
     title: "Padangų montavimas",
     shortDescription:
       "Greitas padangų montavimas, keitimas ir ratų balansavimas Vilniuje. 8 metų patirtis – kokybė, kuria galite pasitikėti.",
@@ -101,6 +107,7 @@ export const services: ServiceData[] = [
   {
     slug: "padangu-remontas",
     icon: Wrench,
+    heroImage: heroPadanguRemontas,
     title: "Padangų remontas",
     shortDescription:
       "Padangų pramušimų ir įpjovimų remontas profesionaliomis priemonėmis. Taisome lengvųjų automobilių padangas.",
@@ -151,6 +158,7 @@ export const services: ServiceData[] = [
   {
     slug: "ratlankiu-lyginimas",
     icon: CircleDot,
+    heroImage: heroRatlankiuLyginimas,
     title: "Ratlankių lyginimas",
     shortDescription:
       "Ar ratlankis sulinko? Profesionalus ratlankių lyginimas, atstatant originalią formą ir užtikrinant optimalų ratų balansą. Nuo 20 €/vnt.",
@@ -196,6 +204,7 @@ export const services: ServiceData[] = [
   {
     slug: "kondicionieriaus-pildymas",
     icon: Snowflake,
+    heroImage: heroKondicionieriau,
     title: "Kondicionierių pildymas",
     shortDescription:
       "Automobilio kondicionavimo sistemos diagnostika ir šaldymo agento pildymas. Patikriname sistemą dėl nuotėkių, išvalome ir užpildome tinkamu freono kiekiu.",
