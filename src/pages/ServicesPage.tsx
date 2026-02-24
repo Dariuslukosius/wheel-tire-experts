@@ -14,7 +14,7 @@ const ServicesPage = () => {
           name="description"
           content="Jūsų Servisas paslaugos Vilniuje: padangų montavimas, padangų remontas, ratlankių lyginimas, kondicionierių pildymas. Kasdien 9–20h."
         />
-        <link rel="canonical" href="https://okra1.lt/paslaugos" />
+        <link rel="canonical" href="https://jususervisas.lt/paslaugos" />
         <html lang="lt" />
       </Helmet>
 

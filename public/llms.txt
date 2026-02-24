@@ -1,0 +1,27 @@
+# Jūsų Servisas
+
+> Profesionalus ratų servisas Vilniuje – padangų montavimas, remontas, ratlankių lyginimas ir kondicionierių pildymas.
+
+## Apie įmonę
+
+**Jūsų Servisas** – ratų ir padangų servisas Vilniuje, veikiantis daugiau nei 8 metus. Teikiame šias paslaugas:
+
+- **Padangų montavimas** – greitas padangų montavimas ir ratų balansavimas, nuo 2€
+- **Padangų remontas** – pramušimų, įpjovimų taisymas, hermetizavimas, vulkanizavimas, nuo 15€
+- **Ratlankių lyginimas** – lietų ir skardinių ratlankių tiesinimas, nuo 20€
+- **Kondicionierių pildymas** – auto kondicionieriaus diagnostika ir freono pildymas
+
+## Kontaktai
+
+- **Tel.:** +370 678 41599
+- **Adresas:** Žirmūnų g. 54A, Vilnius, Lietuva
+- **Darbo laikas:** Kasdien 9:00–20:00
+
+## Svetainės struktūra
+
+- [Pagrindinis](https://jususervisas.lt/)
+- [Paslaugos](https://jususervisas.lt/paslaugos)
+- [Padangų montavimas](https://jususervisas.lt/paslaugos/padangu-montavimas)
+- [Padangų remontas](https://jususervisas.lt/paslaugos/padangu-remontas)
+- [Ratlankių lyginimas](https://jususervisas.lt/paslaugos/ratlankiu-lyginimas)
+- [Kondicionierių pildymas](https://jususervisas.lt/paslaugos/kondicionieriaus-pildymas)

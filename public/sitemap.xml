@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Pagrindinis puslapis -->
+  <url>
+    <loc>https://jususervisas.lt/</loc>
+    <lastmod>2026-02-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Paslaugų sąrašas -->
+  <url>
+    <loc>https://jususervisas.lt/paslaugos</loc>
+    <lastmod>2026-02-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Padangų montavimas -->
+  <url>
+    <loc>https://jususervisas.lt/paslaugos/padangu-montavimas</loc>
+    <lastmod>2026-02-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Padangų remontas -->
+  <url>
+    <loc>https://jususervisas.lt/paslaugos/padangu-remontas</loc>
+    <lastmod>2026-02-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Ratlankių lyginimas -->
+  <url>
+    <loc>https://jususervisas.lt/paslaugos/ratlankiu-lyginimas</loc>
+    <lastmod>2026-02-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Kondicionierių pildymas -->
+  <url>
+    <loc>https://jususervisas.lt/paslaugos/kondicionieriaus-pildymas</loc>
+    <lastmod>2026-02-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

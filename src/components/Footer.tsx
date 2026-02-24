@@ -20,7 +20,7 @@ const Footer = () => {
               Profesionalus ratų servisas Vilniuje – padangų montavimas, remontas, ratlankių lyginimas ir kondicionierių pildymas.
             </p>
             <a
-              href="https://www.facebook.com/okra1servisas/"
+              href="https://www.facebook.com/jususervisas/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-primary-foreground/60 hover:text-accent transition-colors mt-4 text-sm"

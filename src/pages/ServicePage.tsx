@@ -56,7 +56,7 @@ const ServicePage = () => {
         <meta property="og:description" content={service.metaDescription} />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="lt_LT" />
-        <link rel="canonical" href={`https://okra1.lt/paslaugos/${service.slug}`} />
+        <link rel="canonical" href={`https://jususervisas.lt/paslaugos/${service.slug}`} />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
         {faqJsonLd && (
           <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>

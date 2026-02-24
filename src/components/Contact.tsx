@@ -21,9 +21,9 @@ const Contact = () => {
                 Apie Jūsų Servisas
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Jūsų Servisas – tai profesionalus ratų servisas Vilniuje, teikiantis aukštos kokybės 
-                automobilių ratų ir klimato sistemos paslaugas. Mūsų patyrusi komanda naudoja 
-                modernią įrangą, kad kiekvienas klientas gautų geriausią rezultatą. Dirbame 
+                Jūsų Servisas – tai profesionalus ratų servisas Vilniuje, teikiantis aukštos kokybės
+                automobilių ratų ir klimato sistemos paslaugas. Mūsų patyrusi komanda naudoja
+                modernią įrangą, kad kiekvienas klientas gautų geriausią rezultatą. Dirbame
                 greitai ir efektyviai, nes vertiname jūsų laiką.
               </p>
             </div>
@@ -74,7 +74,7 @@ const Contact = () => {
           {/* Map */}
           <div className="rounded-xl overflow-hidden border border-border shadow-sm min-h-[400px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9222.165941813526!2d25.284602981987515!3d54.700095911581585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd96bb29b1a6d7%3A0x99d45b9f8a7763c4!2sOkra1!5e0!3m2!1slt!2slt!4v1771493396569!5m2!1slt!2slt"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9222.165941813526!2d25.284602981987515!3d54.700095911581585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd96bb29b1a6d7%3A0x99d45b9f8a7763c4!2sJ%C5%ABs%C5%B3%20Servisas!5e0!3m2!1slt!2slt!4v1771493396569!5m2!1slt!2slt"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: "400px" }}

@@ -25,7 +25,7 @@ const jsonLd = {
     latitude: "54.7001",
     longitude: "25.2846",
   },
-  url: "https://okra1.lt",
+  url: "https://jususervisas.lt",
   priceRange: "€€",
   areaServed: "Vilnius",
   serviceType: [
@@ -57,7 +57,9 @@ const Index = () => {
         />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="lt_LT" />
-        <link rel="canonical" href="https://okra1.lt" />
+        <link rel="canonical" href="https://jususervisas.lt" />
+        <meta property="og:image" content="/og-image.png" />
+        <meta name="twitter:image" content="/og-image.png" />
         <html lang="lt" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
