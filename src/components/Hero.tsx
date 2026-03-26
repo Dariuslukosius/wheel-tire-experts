@@ -8,6 +8,8 @@ const Hero = () => {
         <img
           src={heroBg}
           alt="Jūsų Servisas ratų servisas - profesionali dirbtuvė"
+          width="1600"
+          height="900"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 hero-overlay" />

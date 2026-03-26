@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <Link to="/" className="flex items-center gap-3 mb-4">
-              <img src={logo} alt="Jūsų Servisas" className="h-9 w-9 rounded-md" />
+              <img src={logo} alt="Jūsų Servisas" width="36" height="36" className="h-9 w-9 rounded-md" />
               <span className="font-heading text-xl font-bold text-primary-foreground">
                 Jūsų Servisas
               </span>

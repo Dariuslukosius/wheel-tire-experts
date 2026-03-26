@@ -11,6 +11,7 @@ const SiteInfoPage = () => {
         <title>Svetainės informacija | Jūsų Servisas</title>
         <meta name="description" content="Informacija apie Jūsų Servisas svetainės kūrimą, SEO optimizavimą ir techninę struktūrą." />
         <meta name="robots" content="noindex, nofollow" />
+        <link rel="canonical" href="https://jususervisas.lt/svetaines-informacija" />
         <html lang="lt" />
       </Helmet>
 

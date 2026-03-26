@@ -14,6 +14,22 @@ const ServicesPage = () => {
           name="description"
           content="Jūsų Servisas paslaugos Vilniuje: padangų montavimas, padangų remontas, ratlankių lyginimas, kondicionierių pildymas. Kasdien 9–20h."
         />
+        <meta property="og:title" content="Paslaugos | Jūsų Servisas – Ratų servisas Vilniuje" />
+        <meta
+          property="og:description"
+          content="Jūsų Servisas paslaugos Vilniuje: padangų montavimas, padangų remontas, ratlankių lyginimas, kondicionierių pildymas. Kasdien 9–20h."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="lt_LT" />
+        <meta property="og:image" content="/og-image.png" />
+        <meta property="og:url" content="https://jususervisas.lt/paslaugos" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Paslaugos | Jūsų Servisas – Ratų servisas Vilniuje" />
+        <meta
+          name="twitter:description"
+          content="Jūsų Servisas paslaugos Vilniuje: padangų montavimas, padangų remontas, ratlankių lyginimas, kondicionierių pildymas. Kasdien 9–20h."
+        />
+        <meta name="twitter:image" content="/og-image.png" />
         <link rel="canonical" href="https://jususervisas.lt/paslaugos" />
         <html lang="lt" />
       </Helmet>
@@ -47,6 +63,8 @@ const ServicesPage = () => {
                       <img
                         src={service.heroImage}
                         alt={service.title}
+                        width="1600"
+                        height="900"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                       />

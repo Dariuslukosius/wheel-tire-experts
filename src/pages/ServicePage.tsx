@@ -56,6 +56,12 @@ const ServicePage = () => {
         <meta property="og:description" content={service.metaDescription} />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="lt_LT" />
+        <meta property="og:image" content="/og-image.png" />
+        <meta property="og:url" content={`https://jususervisas.lt/paslaugos/${service.slug}`} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={service.metaTitle} />
+        <meta name="twitter:description" content={service.metaDescription} />
+        <meta name="twitter:image" content="/og-image.png" />
         <link rel="canonical" href={`https://jususervisas.lt/paslaugos/${service.slug}`} />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
         {faqJsonLd && (
@@ -72,6 +78,8 @@ const ServicePage = () => {
             <img
               src={service.heroImage}
               alt={service.heroTitle}
+              width="1600"
+              height="900"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-primary/80" />
@@ -281,6 +289,8 @@ const ServicePage = () => {
                       <img
                         src={s.heroImage}
                         alt={s.title}
+                        width="1600"
+                        height="900"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                       />

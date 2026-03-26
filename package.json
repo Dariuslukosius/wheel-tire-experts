@@ -6,11 +6,30 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "postbuild": "react-snap",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest"
+  },
+  "reactSnap": {
+    "source": "dist",
+    "concurrency": 1,
+    "crawl": false,
+    "include": [
+      "/",
+      "/paslaugos",
+      "/paslaugos/padangu-montavimas",
+      "/paslaugos/padangu-remontas",
+      "/paslaugos/ratlankiu-lyginimas",
+      "/paslaugos/kondicionieriaus-pildymas"
+    ],
+    "skipThirdPartyRequests": true,
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ]
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -80,6 +99,7 @@
     "globals": "^15.15.0",
     "jsdom": "^20.0.3",
     "postcss": "^8.5.6",
+    "react-snap": "^1.23.0",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.38.0",

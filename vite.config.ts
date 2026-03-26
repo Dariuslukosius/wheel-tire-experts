@@ -11,6 +11,9 @@ export default defineConfig(() => ({
       overlay: false,
     },
   },
+  build: {
+    target: "es2018",
+  },
   plugins: [react()],
   resolve: {
     alias: {
