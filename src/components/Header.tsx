@@ -6,6 +6,7 @@ import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/s
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const contactLink = { pathname: "/", hash: "#kontaktai" };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-sm border-b border-border">
@@ -24,9 +25,9 @@ const Header = () => {
           <Link to="/paslaugos" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             Paslaugos
           </Link>
-          <a href="#kontaktai" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <Link to={contactLink} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             Kontaktai
-          </a>
+          </Link>
         </nav>
 
         <div className="flex items-center gap-3">
@@ -58,9 +59,13 @@ const Header = () => {
                 <Link to="/paslaugos" onClick={() => setOpen(false)} className="text-lg font-medium text-foreground hover:text-primary transition-colors">
                   Paslaugos
                 </Link>
-                <a href="#kontaktai" onClick={() => setOpen(false)} className="text-lg font-medium text-foreground hover:text-primary transition-colors">
+                <Link
+                  to={contactLink}
+                  onClick={() => setOpen(false)}
+                  className="text-lg font-medium text-foreground hover:text-primary transition-colors"
+                >
                   Kontaktai
-                </a>
+                </Link>
                 <hr className="border-border" />
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <Clock className="h-4 w-4" />
