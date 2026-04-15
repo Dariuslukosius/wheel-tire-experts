@@ -1,0 +1,12 @@
+{
+  "buildCommand": "bun run build",
+  "outputDirectory": "dist",
+  "env": {},
+  "functions": {},
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
