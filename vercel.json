@@ -2,6 +2,18 @@
   "buildCommand": "bun run build",
   "outputDirectory": "dist",
   "framework": "vite",
+  "redirects": [
+    {
+      "source": "/kondicionieriu-pildymas",
+      "destination": "/paslaugos/kondicionieriaus-pildymas",
+      "permanent": true
+    },
+    {
+      "source": "/kondicionieriu-pildymas/",
+      "destination": "/paslaugos/kondicionieriaus-pildymas",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
