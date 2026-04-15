@@ -81,8 +81,8 @@ export const services: ServiceData[] = [
       { service: "Lietas ratlankis (R21–R22) – montavimas", price: "5,5 €" },
       { service: "Lietas ratlankis (R21–R22) – balansavimas", price: "6 €" },
       { service: "Lietas ratlankis (R21–R22) – pakeitimas", price: "6 €" },
+      { service: "Mikroautobusų ratų montavimas (4 vnt.)", price: "65 €" },
     ],
-    pricingNote: "Mikroautobusų ratų montavimas už 4 vnt. – 65 €.",
     faq: [
       {
         question: "Kodėl svarbu profesionaliai montuoti ratus?",
