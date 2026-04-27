@@ -236,7 +236,7 @@ export const services: ServiceData[] = [
     priceList: [
       { service: "R134a freonas (100 g)", price: "4 €" },
       { service: "R134a pildymo darbas", price: "25 €" },
-      { service: "R1234yf freonas (100 g)", price: "8 €" },
+      { service: "R1234yf freonas (100 g)", price: "15 €" },
       { service: "R1234yf pildymo darbas", price: "25 €" },
     ],
     pricingNote: "Suteikiama 6 mėn. garantija.",

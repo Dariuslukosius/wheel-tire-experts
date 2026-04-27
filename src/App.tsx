@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { ScrollToTop } from "./components/ScrollToTop";
 import ScrollToTopButton from "./components/ScrollToTopButton";
@@ -25,6 +25,10 @@ const App = () => (
           <ScrollToTopButton />
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route
+              path="/kondicionieriu-pildymas"
+              element={<Navigate to="/paslaugos/kondicionieriaus-pildymas" replace />}
+            />
             <Route path="/paslaugos" element={<ServicesPage />} />
             <Route path="/paslaugos/:slug" element={<ServicePage />} />
             <Route path="/svetaines-informacija" element={<SiteInfoPage />} />
