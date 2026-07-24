@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import logo from "@/assets/logo.png";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
+import { fireCallConversion } from "@/lib/gtag";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -37,6 +38,7 @@ const Header = () => {
           </div>
           <a
             href="tel:+37067841599"
+            onClick={fireCallConversion}
             className="hidden sm:flex items-center gap-2 bg-accent text-accent-foreground px-4 py-2 rounded-lg font-medium text-sm hover:opacity-90 transition-opacity"
           >
             <Phone className="h-4 w-4" />
@@ -73,6 +75,7 @@ const Header = () => {
                 </div>
                 <a
                   href="tel:+37067841599"
+                  onClick={fireCallConversion}
                   className="flex items-center gap-2 bg-accent text-accent-foreground px-4 py-3 rounded-lg font-medium text-sm hover:opacity-90 transition-opacity justify-center"
                 >
                   <Phone className="h-4 w-4" />

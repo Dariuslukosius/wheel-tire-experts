@@ -1,4 +1,5 @@
 import { Phone, Clock, MapPin } from "lucide-react";
+import { fireCallConversion } from "@/lib/gtag";
 
 const Contact = () => {
   return (
@@ -31,6 +32,7 @@ const Contact = () => {
             <div className="space-y-5">
               <a
                 href="tel:+37067841599"
+                onClick={fireCallConversion}
                 className="flex items-center gap-4 group"
               >
                 <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
